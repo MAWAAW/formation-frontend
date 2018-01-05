@@ -1,29 +1,29 @@
 const readline = require('readline');
 const service = require('./service')
 
-var listerTousLesPresentateurs = function () {
-    var tousLesPresentateurs = service.listerTousLesPresentateurs()
+let listerTousLesPresentateurs = function () {
+    let tousLesPresentateurs = service.listerTousLesPresentateurs()
     tousLesPresentateurs.forEach((element, index, array) =>
         console.log(element.firstname)
     )
 }
 
-var listerTopPresentateurs = function () {
-    var topPresentateurs = service.listerTopPresentateurs()
+let listerTopPresentateurs = function () {
+    let topPresentateurs = service.listerTopPresentateurs()
     topPresentateurs.forEach((element, index, array) =>
         console.log(element.firstname)
     )
 }
 
-var listerToutesLesSessions = function () {
-    var toutesLesSessions = service.listerToutesLesSessions()
+let listerToutesLesSessions = function () {
+    let toutesLesSessions = service.listerToutesLesSessions()
     toutesLesSessions.forEach((element, index, array) =>
         console.log(element.title)
     )
 }
 
-var trouverUneSession = function (idSession) {
-    var uneSession = service.trouverUneSession(idSession)
+let trouverUneSession = function (idSession) {
+    let uneSession = service.trouverUneSession(idSession)
     console.log(uneSession)
 }
 
@@ -33,7 +33,7 @@ const rl = readline.createInterface({
     prompt: 'PROMPT> '
 });
 
-var menu = function () {
+let menu = function () {
     console.log('*** Application Conférence ***');
     console.log('1. Liste de tous les présentateurs');
     console.log('2. Top présentateurs');

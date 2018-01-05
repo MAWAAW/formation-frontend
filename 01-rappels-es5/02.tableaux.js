@@ -1,6 +1,6 @@
 console.log("02 - Tableaux");
 
-var villes = ["nantes", "paris", "saint-nazaire", "angers", "le mans"]
+let villes = ["nantes", "paris", "saint-nazaire", "angers", "le mans"]
 
 villes.forEach((element, index, array) => console.log(element))
 
@@ -16,10 +16,10 @@ console.log("auMoinsUneVilleAvecUnTiret == " +
     })
 );
 
-var villeSansTiretSansEspace = villes.filter((element, index, array) => element.indexOf('-') == -1 && element.indexOf(' ') == -1)
+let villeSansTiretSansEspace = villes.filter((element, index, array) => element.indexOf('-') == -1 && element.indexOf(' ') == -1)
 console.log(villeSansTiretSansEspace)
 
-var villesMajusculeSeTerminantParS = villes
+let villesMajusculeSeTerminantParS = villes
     .filter((element, index, array) => element.slice(-1) == 's')
     .map((element, index, array) => element.toUpperCase())
 console.log(villesMajusculeSeTerminantParS)

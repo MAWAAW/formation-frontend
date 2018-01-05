@@ -1,4 +1,4 @@
-var data = require('./data/devfest-2015')
+const data = require('./data/devfest-2015')
 
 exports.listerTousLesPresentateurs = function () {
     return data.speakers
@@ -9,7 +9,7 @@ exports.listerToutesLesSessions = function () {
 }
 
 exports.trouverUneSession = function (idSession) {
-    return data.sessions.filter((element, index, array) => element.id == idSession)
+    return data.sessions.find((element, index, array) => element.id == idSession)
 }
 
 exports.listerTopPresentateurs = function () {

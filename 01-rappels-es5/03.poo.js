@@ -13,8 +13,8 @@ function afficherPersonne(personne) {
     console.log(personne.nom + " " + personne.prenom + " a le pseudo " + personne.pseudo)
 }
 
-var jules = new Personne("LEMAIRE", "Jules", "jules77")
-var paul = new Personne("LEMAIRE", "Paul", "paul44")
+let jules = new Personne("LEMAIRE", "Jules", "jules77")
+let paul = new Personne("LEMAIRE", "Paul", "paul44")
 
 afficherPersonne(jules)
 afficherPersonne(paul)
@@ -32,7 +32,7 @@ Personne.prototype.getInitiales = function () {
 }
 console.log(jules.getInitiales())
 
-var robert = {
+let robert = {
     nom: "LEPREFET",
     prenom: "Robert",
     pseudo: "robert77",
